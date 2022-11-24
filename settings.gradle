@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "MYUMovie(Pagin3)"
+rootProject.name = "MYUMovie(Paging3)"
 include ':app'
