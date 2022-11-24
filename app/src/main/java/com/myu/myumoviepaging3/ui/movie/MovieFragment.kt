@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import com.myu.myumoviepagin3.databinding.FragmentMovieBinding
 import dagger.hilt.android.AndroidEntryPoint
@@ -48,6 +49,10 @@ class MovieFragment : Fragment(),androidx.appcompat.widget.SearchView.OnQueryTex
         binding.movieRecycler.apply {
             adapter = movieAdapter
             layoutManager = GridLayoutManager(requireContext(),2)
+        }
+        movieAdapter.onMovieClick {
+            val action = MovieFragmentDirections.actionMovieFragmentToDetailsFragment(it)
+            findNavController().navigate(action)
         }
     }
 

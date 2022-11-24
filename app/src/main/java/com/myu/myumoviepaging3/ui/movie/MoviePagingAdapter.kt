@@ -11,6 +11,8 @@ import com.myu.myumoviepaging3.data.entities.Movie
 
 class MoviePagingAdapter : PagingDataAdapter<Movie,MoviePagingAdapter.MyViewHolder>(DIFF_UTIL) {
 
+    var onClick : ((String) -> Unit)? = null
+
     inner class MyViewHolder(val viewDataBinding : RowMovieBinding) : RecyclerView.ViewHolder(viewDataBinding.root)
 
     companion object{
@@ -26,8 +28,19 @@ class MoviePagingAdapter : PagingDataAdapter<Movie,MoviePagingAdapter.MyViewHold
         }
     }
 
+    fun onMovieClick(listener : (String) -> Unit){
+        onClick = listener
+    }
+
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
+        val data = getItem(position)
+
         holder.viewDataBinding.setVariable(BR.movie,getItem(position))
+        holder.viewDataBinding.root.setOnClickListener {
+            onClick?.let {
+                it(data?.imdbID!!)
+            }
+        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {

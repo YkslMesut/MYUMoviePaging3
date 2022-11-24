@@ -3,6 +3,7 @@ package com.myu.myumoviepaging3.di
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.myu.myumoviepaging3.data.remote.MovieService
+import com.myu.myumoviepaging3.data.repository.MovieRepository
 import com.myu.myumoviepaging3.utils.Constants
 import dagger.Module
 import dagger.Provides
@@ -38,6 +39,9 @@ object AppModule {
     @Provides
     fun provideMovieService(retrofit: Retrofit): MovieService =
         retrofit.create(MovieService::class.java)
+
+    @Provides
+    fun provideRepository(api : MovieService) = MovieRepository(api)
 
 
 }
