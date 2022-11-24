@@ -1,4 +1,4 @@
-package com.myu.myumoviepagin3.ui.details
+package com.myu.myumoviepaging3.ui.details
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

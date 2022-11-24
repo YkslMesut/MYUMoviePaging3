@@ -1,4 +1,4 @@
-package com.myu.myumoviepagin3.data.entities
+package com.myu.myumoviepaging3.data.entities
 
 data class Movie(
     val Poster: String,

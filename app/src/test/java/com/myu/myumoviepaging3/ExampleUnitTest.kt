@@ -1,4 +1,4 @@
-package com.myu.myumoviepagin3
+package com.myu.myumoviepaging3
 
 import org.junit.Test
 

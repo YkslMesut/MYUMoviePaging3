@@ -1,7 +1,8 @@
-package com.myu.myumoviepagin3
+package com.myu.myumoviepaging3
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.myu.myumoviepagin3.R
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

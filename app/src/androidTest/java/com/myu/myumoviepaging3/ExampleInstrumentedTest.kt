@@ -1,4 +1,4 @@
-package com.myu.myumoviepagin3
+package com.myu.myumoviepaging3
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

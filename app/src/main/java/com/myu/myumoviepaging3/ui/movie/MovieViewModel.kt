@@ -1,4 +1,4 @@
-package com.myu.myumoviepagin3.ui.movie
+package com.myu.myumoviepaging3.ui.movie
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -8,7 +8,7 @@ import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.cachedIn
 import androidx.paging.liveData
-import com.myu.myumoviepagin3.data.remote.MovieService
+import com.myu.myumoviepaging3.data.remote.MovieService
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 

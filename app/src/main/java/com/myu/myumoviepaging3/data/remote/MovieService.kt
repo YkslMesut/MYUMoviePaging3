@@ -1,6 +1,6 @@
-package com.myu.myumoviepagin3.data.remote
+package com.myu.myumoviepaging3.data.remote
 
-import com.myu.myumoviepagin3.data.entities.MovieResponse
+import com.myu.myumoviepaging3.data.entities.MovieResponse
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query

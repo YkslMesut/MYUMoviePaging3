@@ -1,10 +1,9 @@
-package com.myu.myumoviepagin3.di
+package com.myu.myumoviepaging3.di
 
-import androidx.transition.Visibility.Mode
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
-import com.myu.myumoviepagin3.data.remote.MovieService
-import com.myu.myumoviepagin3.utils.Constants
+import com.myu.myumoviepaging3.data.remote.MovieService
+import com.myu.myumoviepaging3.utils.Constants
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

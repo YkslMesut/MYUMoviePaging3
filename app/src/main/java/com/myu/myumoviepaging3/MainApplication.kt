@@ -1,4 +1,4 @@
-package com.myu.myumoviepagin3
+package com.myu.myumoviepaging3
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

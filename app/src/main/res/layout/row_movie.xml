@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-        <import type="com.myu.myumoviepagin3.data.entities.Movie"/>
+        <import type="com.myu.myumoviepaging3.data.entities.Movie"/>
         <variable
             name="movie"
             type="Movie" />

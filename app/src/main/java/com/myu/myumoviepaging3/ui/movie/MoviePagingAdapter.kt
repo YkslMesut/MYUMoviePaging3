@@ -1,13 +1,13 @@
-package com.myu.myumoviepagin3.ui.movie
+package com.myu.myumoviepaging3.ui.movie
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.myu.myumoviepagin3.BR
-import com.myu.myumoviepagin3.data.entities.Movie
 import com.myu.myumoviepagin3.databinding.RowMovieBinding
+import com.myu.myumoviepagin3.BR
+import com.myu.myumoviepaging3.data.entities.Movie
 
 class MoviePagingAdapter : PagingDataAdapter<Movie,MoviePagingAdapter.MyViewHolder>(DIFF_UTIL) {
 

@@ -1,4 +1,4 @@
-package com.myu.myumoviepagin3.utils
+package com.myu.myumoviepaging3.utils
 
 import android.widget.ImageView
 import androidx.databinding.BindingAdapter
